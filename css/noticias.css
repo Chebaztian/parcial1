@@ -1,3 +1,7 @@
+body{
+    font-family: 'Lucida Sans',Helvetica; 
+}
+
 img {
     max-width: 100%;
 }
@@ -9,7 +13,7 @@ h1{
 .container-items {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 5px;
+    gap: 20px;
 }
 
 .item{
@@ -47,9 +51,44 @@ h1{
 .descripcion {
     font-size: 18px;
     font-weight: 700;
-    text-decoration: none;
 }
 
 .button {
-    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: blue; /* Cambia el color del texto a azul */
+    border: 2px solid blue; /* Añade un borde de 2px sólido azul */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave */
 }
+
+.button:hover {
+    background-color: blue; /* Cambia el color de fondo a azul al pasar el mouse */
+    color: white; /* Cambia el color del texto a blanco al pasar el mouse */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  td a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  td a:hover {
+    color: blue;
+  }
+
